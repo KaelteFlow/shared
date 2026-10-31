@@ -10,5 +10,5 @@ export interface ICustomerObjectEntities {
     users: Record<string, IUser>;
 }
 
-export type CustomersObjectResponse = ISearchResponse<IDatabaseEntry<CustomerObject>, ICustomerObjectEntities>;
+export type CustomerObjectsResponse = ISearchResponse<IDatabaseEntry<CustomerObject>, ICustomerObjectEntities>;
 export type CustomerObjectResponse = IDefaultResponse<IDatabaseEntry<CustomerObject>, ICustomerObjectEntities>;
