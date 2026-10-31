@@ -1,128 +1,38 @@
 // ============================================================================
-// Helper Definitions
+// Helper & Core Definitions
 // ============================================================================
-export { EntryStatus, EntryStatuses } from './definations/helper/EntryStatus';
-export { Limit } from './definations/helper/Limit';
-export { IGeoLocation } from './definations/helper/GeoLocation';
-export { IDatabaseEntry } from './definations/helper/DatabaseEntry';
+export * from './definations/helper/EntryStatus';
+export * from './definations/helper/Limit';
+export * from './definations/helper/GeoLocation';
+export * from './definations/helper/DatabaseEntry';
 
 // ============================================================================
-// Scopes
+// Domain Definitions
 // ============================================================================
-export {
-    Scope,
-    Scopes,
-    ScopeFlags,
-    IFineGradedScopeContext,
-    RequiredScopes,
-    IFineGradedScope
-} from './definations/Scopes';
+export * from './definations/Scopes';
+export * from './definations/Session';
+export * from './definations/User';
+export * from './definations/UserContact';
+export * from './definations/Customer';
+export * from './definations/CustomerObject';
+export * from './definations/Metadata';
+export * from './definations/File';
+export * from './definations/JWTToken';
+export * from './definations/Authorisation';
 
 // ============================================================================
-// User Definitions
+// Requests & Responses
 // ============================================================================
-export { IUser, UserType, UserTypes } from './definations/User';
-export { IUserContact } from './definations/UserContact';
+export * from './body/Authorisation';
+export * from './body/Customer';
+export * from './body/CustomerObject';
+export * from './body/User';
+export * from './body/File';
 
-// ============================================================================
-// Customer Definitions
-// ============================================================================
-export {
-	ICustomer,
-	CustomerType,
-	CustomerTypes,
-	ISsoIdP,
-	ICustomerLimits,
-	ICustomerStatistics
-} from './definations/Customer';
-
-// ============================================================================
-// CustomerObject Definitions
-// ============================================================================
-export {
-	CustomerObject,
-	ICustomerObjectLimits
-} from './definations/CustomerObject';
-
-// ============================================================================
-// File Definitions
-// ============================================================================
-export {
-	IFile,
-	FileWithDownload,
-	IFileType,
-	IUploadFile,
-	IFilePart,
-	UploadFilePart,
-	ICompleteFileUploadPart
-} from './definations/File';
-
-// ============================================================================
-// JWT Token Definitions
-// ============================================================================
-export {
-	TokenPayload,
-	TokenType,
-	IInviteToken,
-	ISessionToken,
-	IPasswordResetToken,
-	IEmailOTPToken,
-	IWebAuthnToken,
-	IOIDCStateToken,
-	IUploadToken,
-	IFileToken
-} from './definations/JWTToken';
-
-// ============================================================================
-// Default Response
-// ============================================================================
-export { IDefaultResponse } from './responses/helper/DefaultResponse';
-
-// ============================================================================
-// Search Response
-// ============================================================================
-export { ISearchResponse, ISearchStatisticsDto } from './responses/helper/SearchResponse';
-
-// ============================================================================
-// Authorisation Response
-// ============================================================================
-export {
-	AuthMethod,
-	AuthMethods,
-	IAuthCheckMailResponse,
-	IAuthSessionResponse,
-	IAuthWebAuthnResponse
-} from './responses/AuthorisationResponse';
-
-// ============================================================================
-// Body Types
-// ============================================================================
-export { CreateCustomerBody, UpdateCustomerBody } from './body/Customer';
-export { CreateCustomerObject, UpdateCustomerObject } from './body/CustomerObject';
-export { CreateUserBody, UpdateUserBody } from './body/User';
-export { ICreateFileUploadBody, ICompleteFileUploadBody } from './body/File';
-
-// ============================================================================
-// Response Types
-// ============================================================================
-export {
-	ICustomerEntities,
-	CustomersResponse,
-	CustomerResponse
-} from './responses/Customer';
-
-export {
-	ICustomerObjectEntities,
-	CustomersObjectResponse,
-	CustomerObjectResponse
-} from './responses/CustomerObject';
-
-export {
-	UsersResponse,
-	UserResponse
-} from './responses/User';
-
-export {
-	FileResponse,
-	StartUploadFileResponse
-} from './responses/File';
+export * from './responses/helper/DefaultResponse';
+export * from './responses/helper/SearchResponse';
+export * from './responses/Authorisation';
+export * from './responses/Customer';
+export * from './responses/CustomerObject';
+export * from './responses/User';
+export * from './responses/File';

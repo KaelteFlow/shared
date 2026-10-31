@@ -24,6 +24,8 @@ export interface IFineGradedScopeContext {
     object?: string;
     system?: string;
 }
+
+export type FineGradedSdasdasdcopeContext = Record<ScopeFlags, string>;
 export interface IFineGradedScope {
     scope: Scope;
     context: IFineGradedScopeContext;

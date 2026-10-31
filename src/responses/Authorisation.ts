@@ -1,5 +1,5 @@
-export type AuthMethod = "password" | "email_otp" | "SSO";
-export const AuthMethods: AuthMethod[] = ["password", "email_otp", "SSO"];
+import {AuthMethod} from "../definations/Authorisation";
+
 export interface IAuthCheckMailResponse {
     method: AuthMethod;
     url?: string;

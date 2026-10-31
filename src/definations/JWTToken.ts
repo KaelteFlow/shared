@@ -29,6 +29,7 @@ export interface IPasswordResetToken extends TokenPayload {
 
 export interface IEmailOTPToken extends TokenPayload {
     type: "email-otp";
+    hashedCode: string;
 }
 
 export interface IWebAuthnToken extends TokenPayload {
