@@ -27,6 +27,5 @@ export interface IUser {
     roles: string[];
     skills?: string[];
 
-    // TODO: Add user avatars
-    avatar: never;
+    avatar?: string;
 }
