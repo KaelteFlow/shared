@@ -19,6 +19,7 @@ export * from './definations/Metadata';
 export * from './definations/File';
 export * from './definations/JWTToken';
 export * from './definations/Authorisation';
+export * from './definations/ModulManifest';
 
 // ============================================================================
 // Requests & Responses
