@@ -15,3 +15,16 @@ export interface IModulManifest {
     requiredFrontendVersion?: string;
     requiredFrameworkVersion?: string;
 }
+
+export interface IModulManifestWithDownload extends IModulManifest {
+    downloadUrl: string;
+    hash: string;
+}
+
+export interface IModulIntegrity {
+    id: string;
+    version: string;
+    algorithm: "sha256" | string;
+    createdAt: Date | string;
+    files: Record<string, string>;
+}
