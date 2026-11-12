@@ -20,6 +20,7 @@ export * from './definations/File';
 export * from './definations/JWTToken';
 export * from './definations/Authorisation';
 export * from './definations/ModulManifest';
+export * from './definations/ServerManifest';
 
 // ============================================================================
 // Requests & Responses
@@ -37,3 +38,4 @@ export * from './responses/Customer';
 export * from './responses/CustomerObject';
 export * from './responses/User';
 export * from './responses/File';
+export * from './responses/ModulManifest';
